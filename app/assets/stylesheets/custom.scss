@@ -2,6 +2,10 @@
 @import "bootstrap";
 
 /* 共通 */
+.navbar {
+  background-color: #9b59b6;
+  
+}
 
 body {
   padding-top: 60px;
@@ -57,16 +61,29 @@ p {
   margin-right: 10px;
   font-size: 1.7em;
   color: #fff;
-  text-transform: uppercase;
+  text-transform: none;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
+  font-style: italic;
 }
 
 #logo:hover {
-  color: #fff;
+  color: #808080;
   text-decoration: none;
 }
+
+li .header-list {
+  color: #fff !important;
+  font-weight: bold;
+}
+
+.header-list:hover {
+  color: #808080 !important;
+  font-weight: bold;
+}
+
+
 
 /* デバッグウインドウ */
 
