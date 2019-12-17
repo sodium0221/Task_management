@@ -3,7 +3,8 @@
 
 /* 共通 */
 .navbar {
-  background-color: #9b59b6;
+  background-color: teal;
+  border-color: teal;
   
 }
 
@@ -83,9 +84,34 @@ li .header-list {
   font-weight: bold;
 }
 
+/* トップページ */
 
+.jumbotron p {
+  margin: 0 0 10px;
+}
 
+.container {
+  text-align: center;
+}
 
+.top-title {
+  font-style: italic;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.login-btn {
+  margin-top: 10px;
+}
+
+.label-login {
+  float: left;
+}
+
+.check_box_tag {
+  float: left;
+  margin: 10px 0;
+}
 
 /* デバッグウインドウ */
 
