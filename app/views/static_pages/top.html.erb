@@ -21,11 +21,11 @@
         <%= f.label :パスワード, class: "label-login" %>
         <%= f.password_field :password, class: "form-control" %>
         
-        <div class="check_box_tag">
-          <%= check_box_tag :test1, class: "label-login" %>
-          <%= label_tag :test1, "ログイン情報を記憶する" %>
-        </div>
-          
+        <%= f.label :remember_me, class: "checkbox inline checkbox-login", for: "remember_me" do %>
+          <%= f.check_box :remember_me, id: "remember-me" %>
+          <span>ログイン情報を記憶する</span>
+        <% end %>
+
         <%= f.submit "ログイン", class: "btn btn-primary btn-block btn-login" %>
       <% end %>
     </div>
