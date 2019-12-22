@@ -4,8 +4,11 @@
 /* 共通 */
 .navbar {
   background-color: teal;
-  border-color: teal;
-  
+  border-color: teal !important;
+}
+
+.dropdown-toggle:focus {
+  background-color: teal !important;
 }
 
 body {
@@ -82,6 +85,10 @@ li .header-list {
 .header-list:hover {
   color: #808080 !important;
   font-weight: bold;
+}
+
+.navbar .navbar-toggle:focus {
+  background-color: teal !important;
 }
 
 /* トップページ */
