@@ -20,6 +20,7 @@ class UsersController < ApplicationController
   end
   
   def tasks
+    @tasks = User.all
   end 
   
   private
