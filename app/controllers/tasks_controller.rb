@@ -28,6 +28,7 @@ class TasksController < ApplicationController
   end 
   
   def edit
+    @task = @user.tasks.find_by(id: params[:id])
   end
   
   def destroy
