@@ -8,7 +8,7 @@
       <tbody>
         <tr>
           <th class="active col-md-2"><%= Task.human_attribute_name :id %></th>
-          <td class="col-md-10"><%= @user.id %></td>
+          <td class="col-md-10"><%= @task.id %></td>
         </tr>
         <tr>
           <th class="active"><%= Task.human_attribute_name :name %></th>
@@ -20,11 +20,11 @@
         </tr>
         <tr>
           <th class="active"><%= Task.human_attribute_name :created_at %></th>
-          <td><%= @task.created_at %></td>
+          <td><%= @task.created_at.strftime('%Y/%m/%d %H:%M') %></td>
         </tr>
         <tr>
           <th class="active"><%= Task.human_attribute_name :updated_at %></th>
-          <td><%= @task.updated_at %></td>
+          <td><%= @task.updated_at.strftime('%Y/%m/%d %H:%M') %></td>
         </tr>
       </tbody>
     </table>
