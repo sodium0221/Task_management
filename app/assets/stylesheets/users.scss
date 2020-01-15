@@ -1,6 +1,31 @@
+#table-users {
+  th {
+    vertical-align: middle;
+  }
+  td {
+    vertical-align: middle;
+    text-align: left;
+  }
+  
+}
+
+th .table-head-user {
+}
+
 .tasks-title {
 }
 
 .new_task_button {
   float: right;
+}
+
+#table-user {
+  th {
+    vertical-align: middle;
+    text-align: center;
+  }
+  
+  td {
+    text-align: left;
+  }
 }

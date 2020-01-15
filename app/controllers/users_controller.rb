@@ -1,5 +1,10 @@
 class UsersController < ApplicationController
   before_action :set_user, only: %i(show edit update destroy)
+  before_action :admin_user, only: %i(index destroy)
+  
+  def index
+    @users = User.paginate(page: params[:page], per_page: 20)
+  end 
   
   def show
     @user = User.find(params[:id])
@@ -36,6 +41,12 @@ class UsersController < ApplicationController
       render :edit
     end 
   end 
+  
+  def destroy
+    @user.destroy
+    flash[:success] = "#{@user.name}のデータを削除しました。"
+    redirect_to users_url
+  end 
 
   
   private
@@ -46,5 +57,9 @@ class UsersController < ApplicationController
     
     def set_user
       @user = User.find(params[:id])
+    end 
+    
+    def admin_user
+      redirect_to root_url unless current_user.admin?
     end 
 end
